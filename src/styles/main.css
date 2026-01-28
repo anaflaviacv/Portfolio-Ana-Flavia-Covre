@@ -1,0 +1,323 @@
+#inicio {
+  display: Flex;
+  justify-content: left;
+  align-items: center;
+  padding: 30px 10px;
+  background: radial-gradiente(
+    circle at top,
+    #d7d4f0 0%,
+    #c2bee6 40%,
+    #a89fd8 100%
+  );
+}
+
+.Ana-card {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  text-align: left;
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.card-text-content {
+  width: 60%;
+  padding-right: 20px;
+}
+
+.card-image-placeholder {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 30px;
+  top: 15%;
+}
+
+.card-image-placeholder img {
+  width: 100%;
+  height: auto;
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: 445px;
+  display: block;
+  object-fit: contain;
+  filter: blur(0px);
+  mask-image: radial-gradient(
+    circle,
+    rgba(0,0,0,1) 59%,
+    rgba(0,0,0,0) 30%
+  );
+}
+
+.japantext {
+  font-size: 90px;
+  color: #c0c0c0; /* cinza claro */
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: block;
+  position: static;
+  top: auto;
+  left: auto;
+  margin: 0;
+  z-index: 1;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.Ana-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #710c04;
+  letter-spacing: 2px;
+  position: static;
+  top: auto;
+  left: auto;
+  margin: 0;
+  margin-top: -60px;
+  margin-bottom: 20px;
+  z-index: 2;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  font-family: "Cinzel", sans-serif;
+}
+
+.bemvindos {
+  color: #383838;
+  font-size: 18px;
+}
+
+.card-text-content p {
+  color: #383838;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.card-text-content spam {
+  color: #710c04;
+}
+
+#sobre-mim {
+  display: flex;
+  flex-direction: row; /* força ficar lado a lado */
+  align-items: center; /* centraliza verticalmente */
+  justify-content: center; /* centraliza horizontalmente */
+  gap: 300px; /* espaço entre imagem e texto */
+  padding: 200px 30px;
+  background-color: #ffffff;
+  width: 100%;
+  height: 900px;
+  box-sizing: border-box;
+}
+
+.img-container {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.texto {
+  max-width: 500px;
+  flex-grow: 1;
+}
+
+.texto h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #710c04;
+}
+
+.texto p {
+  font-size: 15px;
+  color: #383838;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+#skills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 300px;
+  width: 100%;
+  height: 400px;
+  box-sizing: border-box;
+}
+
+.tech {
+  display: flex;
+  flex: direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 300px;
+}
+
+.icons-tec {
+  align-items: center;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+}
+
+.icons-tec span {
+  font-size: 40px;
+  color: #383838;
+}
+
+.icons-tec h3 {
+  text-align: center;
+ color: #710c04;
+}
+
+#projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+}
+
+.github {
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  width: 25%;
+  padding: 20px;
+}
+
+.img-git {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+
+}
+
+.github a {
+  text-decoration: none;
+  color: #710c04;
+}
+
+.github p {
+  font-weight: 1000px;
+  color: #383838;
+}
+
+.github h3 {
+  color: #710c04;
+}
+
+.curriculo {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #710c04;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.curriculo:hover {
+  background-color: #5a0903;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media screen and (max-width: 1170px) {
+  #Inicio {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 30px;
+    width: 100%;
+  }
+
+  .Ana-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+  }
+  .card-image-placeholder {
+    display: none;
+  }
+
+  .card-text-content {
+    width: 88%;
+    padding: 0;
+  }
+
+  .japantext {
+    font-size: 70px; /* reduz tamanho */
+    text-align: center;
+    left: 0;
+    margin: 0 auto;
+  }
+
+  .bemvindos {
+    text-align: center;
+  }
+
+  .Ana-title {
+    font-size: 45px;
+    text-align: center;
+    left: 0;
+    top: -50px;
+    bottom: auto;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #sobre-mim,
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .img-container {
+    top: 295px;
+  }
+
+
+  .github {
+    width: 50%;
+    margin-top: 520px;
+
+  }
+
+  .img-espada {
+    display: none;
+  }
+
+  .tech {
+    margin-top: 900px;
+    padding: 0 20px 0 20px;
+  }
+}

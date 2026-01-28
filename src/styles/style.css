@@ -1,0 +1,12 @@
+@import url(header.css);
+@import url(main.css);
+@import url(contatos.css);
+@import url(footer.css);
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
